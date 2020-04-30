@@ -1,0 +1,31 @@
+@import "../abstract/variables";
+
+@mixin display-flex ($justify-content) {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify-content;
+}
+
+@mixin white-strip {
+    border-bottom: $border;
+    height: $padding-l;
+    padding: 0 $padding-l;
+}
+
+@mixin grey-text-strip {
+    color: $color-medium-grey;
+    font-size: 13px;
+}
+
+@mixin tags {
+    border-radius: $border-radius-tag;
+    box-sizing: $box-sizing;
+    color: $color-white;
+    font-size: 14px;
+    padding: 6px 14px;
+}
+
+@mixin box-shadow ($px, $color) {
+    box-shadow: 0 1px $px $color;
+}

@@ -1,0 +1,60 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+@import "../components/icons";
+
+.breadcrumbs-section {
+        @include display-flex (space-between);
+        @include white-strip;
+        .breadcrumbs {
+            @include grey-text-strip;
+            span {
+                color: $color-pale-blue1;
+                font-weight: $font-weight-bold;
+            }
+        }
+    }
+
+.cards {
+    background-color: $color-light-grey1;
+    /*margin-top: $margin-l 0;*/
+    padding: 60px $padding-l $padding-l $padding-l;
+    text-align: center;
+    h1 {
+        color: $color-dark-grey;
+        display: block !important;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0 0 60px 0;
+        padding: 0;
+        width: 100%;
+    }
+    .card-container {
+        @include display-flex (space-between);
+        margin-bottom: $margin-m;
+    }
+}
+
+.paging {
+    @include display-flex (space-between);
+    @include white-strip;
+    @include grey-text-strip;
+    align-items: flex-start;
+    height: 110px;
+    margin-top: $margin-m;
+    .paging-span {
+        color: $color-dark-grey;
+        font-weight: 500;
+    }
+    .paging-list a {
+        margin-left: $margin-xs;
+        padding: 2px 5px;
+    }
+    .current-page {
+        background-color: $color-pale-blue1;
+        border-radius: $border-radius-card;
+        color: $color-light-grey1; 
+    }
+    .last-page {
+        margin: 0 !important;
+    }
+}

@@ -1,0 +1,34 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+@import "./anchor";
+
+.view-icon {
+    font-size: 20px;
+    margin-left: $margin-s;
+    &.blue {
+        color: $color-pale-blue1;
+    }
+}
+
+.social-icon {
+    font-size: 18px;
+    margin-right: $margin-m;
+}
+
+.paging-arrow {
+    border-radius: $border-radius-round;
+    border-color: $color-medium-grey;
+    border: solid 1px $color-light-grey2;
+    color: $color-dark-grey !important;
+    font-size: 18px;
+    padding: 5px;
+    
+    &.previous {
+        color: $color-light-grey2 !important;
+        margin-right: $margin-l !important;
+    }
+
+    &.next {
+        margin-left: $margin-l !important;
+    }
+}

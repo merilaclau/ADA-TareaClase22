@@ -1,0 +1,18 @@
+button {
+    bottom: 0;
+    border: none;
+    color: $color-dark-grey !important;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    height: 16%;
+    left: 0;
+    position: absolute !important;
+    text-align: center;
+    transition: background-color 0.4s linear, color 0.4s linear;
+    width: 100%;
+    :hover {
+        background-color: $color-pale-blue1 !important;
+        color: $color-white !important;
+    }
+}

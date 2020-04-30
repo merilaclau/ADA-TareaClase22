@@ -1,0 +1,77 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+.card {
+    @include display-flex (flex-start);
+    @include box-shadow (4px, $color-medium-grey);
+    align-items: flex-start !important;
+    background-color: $color-white !important;
+    flex-direction: column;
+    height: 420px;
+    padding: 30px;
+    position: relative;
+    /*text-align: center;*/
+    width: 280px;
+    .card-header {
+        @include display-flex (space-between);
+        .cost-per-hour {
+            color: $color-dark-grey;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+    .avatar {
+        border-radius: $border-radius-round;
+        @include box-shadow (4px, $color-dark-grey);
+        /*left: 116px;
+        position: absolute;
+        top: 60px;*/
+        width: 40%;
+        
+    }
+    .profile-summary {
+        @include display-flex (center);
+        flex-direction: column;
+        box-sizing: $box-sizing;
+        /*position: absolute;
+        top: 240px;
+        width: 330px;*/
+        span {
+            display: block;
+        }
+        .profile-name {
+            color: $color-dark-grey;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: $margin-s;
+            margin-bottom: $margin-xs;
+        }
+        .profession {
+            color: $color-medium-grey;   
+        }
+        .hired {
+            color: $color-pale-blue2;
+            display: inline;
+        }
+    }
+    .description {
+        font-size: 14px;
+        margin-bottom: $margin-xs;
+    }
+    .skills-container {
+        @include display-flex (space-between);
+        flex-direction: row;
+        margin-bottom: $margin-s;
+    }
+    article {
+        color: $color-medium-grey;
+        line-height : 25px;
+    }
+    .separator {
+        align-self: center;
+        border-bottom: $border;
+        display: inline-block;
+        width: 30%;
+    }
+    
+}

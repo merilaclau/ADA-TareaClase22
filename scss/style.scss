@@ -1,0 +1,19 @@
+@import "./abstract/variables";
+@import "./abstract/mixins";
+
+@import "./sections/header";
+@import "./sections/main";
+@import "./sections/footer";
+
+@import "./components/anchor";
+@import "./components/button";
+@import "./components/card";
+@import "./components/icons";
+@import "./components/list";
+@import "./components/tag";
+
+body {
+    box-sizing: $box-sizing;
+    font-family: $font-family;
+    margin: 0;
+}

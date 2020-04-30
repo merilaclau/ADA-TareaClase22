@@ -1,0 +1,23 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+.tag-status {
+    @include tags;
+    background-color: $color-green;
+}
+
+.skills {
+    @include tags;
+    background-color: $color-white;
+    border: 1px solid $color-light-grey2;
+    display: inline;
+    color: $color-dark-grey;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.more-skills {
+    @include tags;
+    @include box-shadow (4px, $color-pale-blue1)
+    background-color: $color-pale-blue1;
+}

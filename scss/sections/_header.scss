@@ -1,0 +1,19 @@
+@import "../components/anchor";
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+.main-header {
+    @include display-flex (space-between);
+    @include white-strip;
+    a {
+        margin-left: $margin-m;
+    }
+}
+
+.logo-header {
+    width: 18%;
+}
+
+.anchor-blue {
+    color: $color-pale-blue1;
+}

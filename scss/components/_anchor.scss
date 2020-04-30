@@ -1,0 +1,7 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+a, i {
+    @include grey-text-strip;
+    text-decoration: none;
+}

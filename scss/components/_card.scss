@@ -53,6 +53,10 @@
             color: $color-pale-blue2;
             display: inline;
         }
+        .freelance {
+            color: $color-green;
+            display: inline;
+        }
     }
     .description {
         font-size: 14px;
@@ -67,11 +71,22 @@
         color: $color-medium-grey;
         line-height : 25px;
     }
+    footer {
+        &:hover {
+            .separator {
+                display: none;
+            }
+        }
+    }
     .separator {
         align-self: center;
-        border-bottom: $border;
+        border-bottom: solid 20px $color-light-grey2;
         display: inline-block;
+        height: 1px;
         width: 30%;
-    }
-    
+        &.button:hover {
+            display: none;
+        }
+
+    }    
 }

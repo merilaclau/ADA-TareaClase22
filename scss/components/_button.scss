@@ -11,8 +11,19 @@ button {
     text-align: center;
     transition: background-color 0.4s linear, color 0.4s linear;
     width: 100%;
-    :hover {
-        background-color: $color-pale-blue1 !important;
+    /*&:before {
+        content: ' ';
+        border-bottom: $border;
+        box-sizing: $box-sizing;
+        display: inline-block;
+        padding: 0 160px;
+        height: 1px;
+    }*/
+    &:hover {
+        background-color: $color-pale-blue1;
         color: $color-white !important;
+        .separator {
+            display: none;
+        }
     }
 }

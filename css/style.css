@@ -143,10 +143,20 @@ button {
   position: absolute !important;
   text-align: center;
   transition: background-color 0.4s linear, color 0.4s linear;
-  width: 100%; }
-  button :hover {
-    background-color: #54a8fd !important;
+  width: 100%;
+  /*&:before {
+        content: ' ';
+        border-bottom: $border;
+        box-sizing: $box-sizing;
+        display: inline-block;
+        padding: 0 160px;
+        height: 1px;
+    }*/ }
+  button:hover {
+    background-color: #54a8fd;
     color: #ffffff !important; }
+    button:hover .separator {
+      display: none; }
 
 .card {
   align-items: center;
@@ -201,6 +211,9 @@ button {
     .card .profile-summary .hired {
       color: #7db6e9;
       display: inline; }
+    .card .profile-summary .freelance {
+      color: #57d48e;
+      display: inline; }
   .card .description {
     font-size: 14px;
     margin-bottom: 10px; }
@@ -214,11 +227,16 @@ button {
   .card article {
     color: #b5b9bf;
     line-height: 25px; }
+  .card footer:hover .separator {
+    display: none; }
   .card .separator {
     align-self: center;
-    border-bottom: solid 1px #d3d8de;
+    border-bottom: solid 20px #d3d8de;
     display: inline-block;
+    height: 1px;
     width: 30%; }
+    .card .separator.button:hover {
+      display: none; }
 
 a, i {
   color: #b5b9bf;
